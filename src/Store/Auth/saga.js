@@ -292,7 +292,16 @@ function* addusermobilefunc({ payload }) {
     );
     yield put(addusermobilesuccess(payload));
     // alert("verified");
-    yield put(push(`/verify-number`));
+    if(response.data.code === 0)
+    {
+      yield put(push(`/verify-number`));
+    } else if (response.data.code === 1)
+    {
+      alert("same number already exist")
+    } else {
+      alert("api failed")
+    }
+    // yield put(push(`/verify-number`));
     // console.log(
     //   "Password data responseeeeeee------------------->",
     //   response.data
