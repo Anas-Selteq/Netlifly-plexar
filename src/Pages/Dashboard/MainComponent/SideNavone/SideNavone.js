@@ -4,18 +4,12 @@ import "../dashboard.scss";
 
 function SideNavone() {
   return (
-    <div className="col-md-12 px-0 overflow_main_dashboard">
-      <div className="d-flex">
-        <div className=" side_nav_main_1">
-          <div className="py-4">.</div>
-          <div className="py-3">1</div>
-        </div>
-        <div className="side_nav_1_right">
-          <div className="col-md-12 pt-1 pb-2 background_nav1_header">
+    <>
+    <div className="col-md-12 pt-1 pb-2 background_nav1_header">
             <div className="row">
               <div className="col-md-6">
                 <div className="row">
-                  <div className="col-md-3 margin_left_m3">
+                  <div className="col-md-3 ">
                     <img
                       className="img-fluid"
                       src="../images/plexar/logoheader.png"
@@ -27,13 +21,48 @@ function SideNavone() {
                 Welcome
               </div>
             </div>
+          </div> 
+    <div className="col-md-12 px-0 overflow_main_dashboard">
+      
+      <div className="d-flex">
+        
+        <div className=" side_nav_main_1">
+          <div className="col-md-12 pr-0 pl-1">
+          <div className="col-md-12 height_fiz_menu_active">
+          <div className="py-1">
+          <i class="fas fa-book-open"></i>
           </div>
+          </div>
+          <div className="col-md-12 height_fiz_menu">
+          <div className="py-1">
+          <i class="far fa-user-circle"></i>
+          </div>
+          </div>
+          <div className="col-md-12 height_fiz_menu">
+          <div className="py-1">
+          <i class="fas fa-tools"></i>
+          </div>
+          </div>
+          <div className="col-md-12 height_fiz_menu">
+          <div className="py-1">
+          <i class="fas fa-chart-line"></i>
+          </div>
+          </div>
+          <div className="col-md-12 height_fiz_menu">
+          <div className="py-1">
+          <i class="far fa-clipboard"></i>
+          </div>
+          </div>
+          </div>
+        </div>
+        <div className="side_nav_1_right">
           <div className="col-md-12 pt-2 py-3 background_sidenav_one ">
             <SideNavtwo />
           </div>
         </div>
       </div>
     </div>
+    </>
   );
 }
 

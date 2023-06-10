@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const BASE_URL_API = "http://172.187.153.193:8049/";
+const BASE_URL_API = "https://otpgenerateapi-preprod.findanexpert.net/";
 // const BASE_URL_API = "https://sop.zpexsolutions.com/";
 
 const axiosConfig = axios.create({
